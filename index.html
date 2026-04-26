@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexcent</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="img/Icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Icon-dark.svg" type="image/x-icon">
 </head>
 
 <body>
+    <div class="header__overlay"></div>
     <header class="header">
         <nav class="header__nav">
             <img src="img/Logo.svg" alt="logo" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="header__menu">
                 <li class="header__menu-item"><a href="#home">Home</a></li>
                 <li class="header__menu-item"><a href="#services">Services</a></li>
@@ -21,21 +27,22 @@
                 <li class="header__menu-item"><a href="#testimonial">Testimonial</a></li>
                 <li class="header__menu-item"><a href="#faq">FAQ</a></li>
             </ul>
-            <div class="header__actions">
-                <a href="" class="header__link">Login</a>
-                <a href="" class="button button--primary">Sign Up</a>
-            </div>
+            
         </nav>
         <div class="hero">
             <div class="container">
                 <div class="hero__content">
-                    <div class="hero__text">
-                        <h1 class="hero__title">Lessons and insights <span>from 8 years</span></h1>
+                    <div class="hero__text scroll-animate">
+                        <h1 class="hero__title">Lessons and insights <br><span>from 8 years</span></h1>
+                        <br>
                         <p class="hero__description">Where to grow your business as a photographer: site or social media?</p>
+                        <br>
 
                         <button class="button button--primary">Register</button>
                     </div>
-                    <img src="img/Illustration.svg" alt="hero image">
+                    <div class="hero__image scroll-animate-right">
+                        <img src="img/Illustration.svg" alt="hero image">
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,7 +50,7 @@
     <main>
         <section class="clients">
             <div class="container">
-                <div class="clients__intro">
+                <div class="clients__intro scroll-animate">
                     <h2 class="section__title">Our Clients</h2>
                     <p class="section__subtitle">We have been working with some Fortune 500+ clients</p>
                     <div class="clients__logos">
@@ -56,34 +63,36 @@
                         <img src="img/Logo(7).svg" alt="logo7">
                     </div>
                 </div>
-                <div class="community">
-                    <h2 class="section__title">Manage your entire community in a single system</h2>
+                <div class="community scroll-animate">
+                    <h2 class="section__title">Manage your entire community <br> in a single system</h2>
                     <p class="section__subtitle">Who is Nextcent suitable for?
                     </p>
                 </div>
                 <div class="community__cards">
-                    <div class="community-card">
+                    <div class="community-card scroll-animate" style="transition-delay: 0.1s;">
                         <img src="img/Icon(1).svg" alt="icon1">
                         <h3 class="community-card__title">Membership Organisations</h3>
                         <p class="community-card__description">Our membership management software provides full automation of membership
                             renewals and payments</p>
                     </div>
-                    <div class="community-card">
+                    <div class="community-card scroll-animate" style="transition-delay: 0.2s;">
                         <img src="img/Icon(2).svg" alt=" icon2">
                         <h3 class="community-card__title">National Associations</h3>
                         <p class="community-card__description">Our membership management software provides full automation of membership
                             renewals and payments</p>
                     </div>
-                    <div class="community-card">
+                    <div class="community-card scroll-animate" style="transition-delay: 0.3s;">
                         <img src="img/Icon(3).svg" alt="icon3">
                         <h3 class="community-card__title">Clubs And Groups</h3>
                         <p class="community-card__description">Our membership management software provides full automation of membership
                             renewals and payments</p>
                     </div>
                 </div>
-                <div class="pixelgrade">
-                    <img src="img/Frame 35.svg" alt="image">
-                    <div class="pixelgrade__content">
+                <div class="pixelgrade scroll-animate-scale">
+                    <div class="pixelgrade__image scroll-animate-left">
+                        <img src="img/Frame 35.svg" alt="image">
+                    </div>
+                    <div class="pixelgrade__content scroll-animate-right">
                         <h2 class="section__title">The unseen of spending three years at Pixelgrade</h2>
                         <p class="pixelgrade__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
                             justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum
@@ -98,11 +107,11 @@
         <section class="helping">
             <div class="container">
                 <div class="helping__content">
-                    <div class="helping__text">
+                    <div class="helping__text scroll-animate-left">
                         <h2 class="section__title">Helping a local <br> <span>business reinvent itself</span></h2>
                         <p class="section__subtitle">We reached here with our hard work and dedication</p>
                     </div>
-                    <div class="helping__stats">
+                    <div class="helping__stats scroll-animate-right">
                         <div class="stat">
                             <img src="img/Icon(4).svg" alt="icon4">
                             <div class="stat__info">
@@ -140,8 +149,10 @@
         <section class="design">
             <div class="container">
                 <div class="design__content">
-                    <img src="img/pana.svg" alt="">
-                    <div class="design__text">
+                    <div class="design__image scroll-animate-left">
+                        <img src="img/pana.svg" alt="">
+                    </div>
+                    <div class="design__text scroll-animate-right">
                         <h2 class="section__title">How to design your site footer like we did</h2>
                         <p class="design__description">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue
                             nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis
@@ -159,8 +170,10 @@
         <section class="customers">
             <div class="container">
                 <div class="customers__content">
-                    <img src="img/image 9.svg" alt="image">
-                    <div class="customers__text">
+                    <div class="customers__image scroll-animate-left">
+                        <img src="img/image 9.svg" alt="image">
+                    </div>
+                    <div class="customers__text scroll-animate-right">
                         <p class="customers__quote">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem
                             dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare,
                             tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet
@@ -187,24 +200,24 @@
         <section class="marketing">
             <div class="container">
                 <div class="marketing__content">
-                    <h2 class="section__title">Caring is the new marketing</h2>
-                    <p class="section__subtitle">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+                    <h2 class="section__title scroll-animate">Caring is the new marketing</h2>
+                    <p class="section__subtitle scroll-animate">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.</p>
                     <div class="marketing__cards">
-                        <div class="marketing-card">
+                        <div class="marketing-card scroll-animate" style="transition-delay: 0.1s;">
                             <img src="img/image 18.svg" alt="image">
                             <div class="marketing-card__overlay">
                                 <h4 class="marketing-card__title">Creating Streamlined Safeguarding Processes with OneRen</h4>
                                 <a href="">Readmore <img src="img/Right.svg" alt="right"></a>
                             </div>
                         </div>
-                        <div class="marketing-card">
+                        <div class="marketing-card scroll-animate" style="transition-delay: 0.2s;">
                             <img src="img/image 19.svg" alt="image">
                             <div class="marketing-card__overlay">
                                 <h4 class="marketing-card__title">Creating Streamlined Safeguarding Processes with OneRen</h4>
                                 <a href="">Readmore <img src="img/Right.svg" alt="right"></a>
                             </div>
                         </div>
-                        <div class="marketing-card">
+                        <div class="marketing-card scroll-animate" style="transition-delay: 0.3s;">
                             <img src="img/image 20.svg" alt="image">
                             <div class="marketing-card__overlay">
                                 <h4 class="marketing-card__title">Creating Streamlined Safeguarding Processes with OneRen</h4>
@@ -215,10 +228,9 @@
                 </div>
             </div>
         </section>
-        <section class="cta">
+        <section class="cta scroll-animate">
             <div class="container">
                 <h2 class="cta__title">Pellentesque suscipit <br>fringilla libero eu.</h2>
-                <br><br>
                 <button class="button button--primary">Get a Demo ></button>
             </div>
         </section>
@@ -226,12 +238,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <div class="footer__brand">
+                <div class="footer__brand scroll-animate-left">
                     <div class="footer__logo">
                         <img src="img/Icon-dark.svg" alt="">
-                        <h2 class="section__title">Nexcent</h2>
+                        <h2 class="footer__logo-title">Nexcent</h2>
                     </div>
-                    <p class="footer__copyright">Copyright © 2020 Nexcent ltd.<br>All rights reserved</p>
+                    <p class="footer__copyright">Copyright 2020 Nexcent ltd.<br>All rights reserved</p>
                     <div class="footer__social">
                         <img src="img/Social Icons1.svg" alt="sm1">
                         <img src="img/Social Icons2.svg" alt="sm2">
@@ -239,7 +251,7 @@
                         <img src="img/Social Icons4.svg" alt="sm4">
                     </div>
                 </div>
-                <div class="footer__links">
+                <div class="footer__links scroll-animate-right">
                     <ul class="footer__list">
                         <h4 class="footer__heading">Company</h4>
                         <li><a href="">About us</a></li>
@@ -260,7 +272,7 @@
                         <h4 class="footer__heading">Stay up to date</h4>
                         <div class="footer__input">
                             <input type="text" placeholder="Enter your email">
-                            <img src="img/send.svg" alt="">
+                            <img src="img/send.svg" alt="" class="footer__input-icon">
                         </div>
                     </div>
                 </div>
@@ -268,6 +280,50 @@
         </div>
     </footer>
 
+    <script>
+        const burger = document.querySelector('.header__burger');
+        const menu = document.querySelector('.header__menu');
+        const overlay = document.querySelector('.header__overlay');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            burger.classList.remove('active');
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        // Scroll Animation
+        const scrollElements = document.querySelectorAll('.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale');
+
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
+        };
+
+        const displayScrollElement = (element) => {
+            element.classList.add('visible');
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                    displayScrollElement(el);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+        });
+
+        // Initial check
+        handleScrollAnimation();
+    </script>
 </body>
 
 </html>
