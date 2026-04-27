@@ -13,6 +13,7 @@ html {
 body {
     font-family: Inter;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 ul {
@@ -308,13 +309,14 @@ a {
 }
 
 .pixelgrade__image {
-    flex: 1;
-}
+        max-width: 100%;
+        overflow: hidden;
+    }
 
-.pixelgrade__image img {
-    width: 100%;
-    display: block;
-}
+    .pixelgrade__image img {
+        max-width: 100%;
+        height: auto;
+    }
 
 .pixelgrade__content {
     flex: 1;
@@ -397,13 +399,17 @@ a {
 }
 
 .design__image {
-    flex: 1;
-}
+        flex: 1;
+        max-width: 100%;
+        overflow: hidden;
+    }
 
-.design__image img {
-    width: 100%;
-    display: block;
-}
+    .design__image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 
 .design__text {
     flex: 1;
@@ -433,9 +439,12 @@ a {
 }
 
 .customers__image img {
-    max-width: 100%;
-    display: block;
-}
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        overflow: hidden;
+    }
 
 .customers__text {
     flex: 1;
@@ -488,10 +497,19 @@ a {
 }
 
 .marketing-card {
-    position: relative;
-    flex: 1;
-    max-width: 33%;
-}
+        position: relative;
+        flex: 1;
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .marketing-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 
 .marketing-card img {
     /* width: 100%; */
@@ -1059,8 +1077,14 @@ a {
 
 /* Mobile - below 768px */
 @media (max-width: 768px) {
+    * {
+        max-width: 100vw;
+    }
+
     .container {
-        padding: 0 20px;
+        padding: 0 16px;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .section__title {
@@ -1140,6 +1164,7 @@ a {
 
     .hero {
         padding-top: 80px;
+        overflow: hidden;
     }
 
     .hero__content {
@@ -1158,6 +1183,12 @@ a {
 
     .hero__image {
         max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero__image img {
+        max-width: 100%;
+        height: auto;
     }
 
     .clients {
@@ -1251,8 +1282,11 @@ a {
     }
 
     .marketing-card__overlay {
-        width: 250px;
+        width: 90%;
+        max-width: 280px;
         bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .marketing-card__title {
@@ -1287,10 +1321,13 @@ a {
     .footer__links {
         flex-direction: column;
         gap: 30px;
+        width: 100%;
+        flex-wrap: nowrap;
     }
 
     .footer__list {
         gap: 10px;
+        min-width: 100%;
     }
 
     .footer__heading {
@@ -1307,8 +1344,13 @@ a {
         font-size: 18px;
     }
 
+    .footer__newsletter {
+        width: 100%;
+    }
+
     .footer__input {
         padding: 12px;
+        max-width: 100%;
     }
 
     .footer__input input {
@@ -1318,19 +1360,23 @@ a {
 
 /* Small Mobile - below 480px */
 @media (max-width: 480px) {
+    * {
+        max-width: 100vw;
+    }
+
     .section__title {
-        font-size: 26px;
-        line-height: 34px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     .hero__title {
-        font-size: 26px;
-        line-height: 34px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     .cta__title {
-        font-size: 26px;
-        line-height: 34px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     .button {
@@ -1340,14 +1386,33 @@ a {
 
     .community__cards {
         gap: 20px;
+        margin: 20px 0;
+    }
+
+    .marketing {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+
+    .marketing__cards {
+        gap: 100px;
     }
 
     .marketing-card__overlay {
-        width: 220px;
+        width: 85%;
+        max-width: 250px;
     }
 
     .footer__social img {
         max-width: 30px;
+    }
+
+    .footer__newsletter {
+        width: 100%;
+    }
+
+    .footer__input {
+        max-width: 100%;
     }
 }
 
